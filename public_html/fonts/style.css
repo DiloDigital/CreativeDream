@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'CreativeDreams';
+    src:    url('CreativeDreams.eot?t0q35q');
+    src:    url('CreativeDreams.eot?t0q35q#iefix') format('embedded-opentype'),
+        url('CreativeDreams.ttf?t0q35q') format('truetype'),
+        url('CreativeDreams.woff?t0q35q') format('woff'),
+        url('CreativeDreams.svg?t0q35q#CreativeDreams') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'CreativeDreams' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home3:before {
+    content: "\e900";
+}
+.icon-envelop:before {
+    content: "\e901";
+}
+.icon-menu:before {
+    content: "\e902";
+}
+.icon-cross:before {
+    content: "\e903";
+}
+.icon-facebook:before {
+    content: "\e904";
+}
+.icon-instagram:before {
+    content: "\e905";
+}
+.icon-twitter:before {
+    content: "\e906";
+}
+

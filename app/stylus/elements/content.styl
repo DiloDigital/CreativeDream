@@ -1,0 +1,396 @@
+//edit()
+
+/* =======================================================
+   Styles
+   ======================================================== */
+
+body
+	font 16px/26px Helvetica, Helvetica Neue, Arial
+
+.wrapper
+	center(90%)
+
+/* ===================
+    ALL: Black Theme
+   =================== */
+   
+.header-container,
+.footer-container,
+.blog_container
+	background negro
+
+.main
+.article_container
+	background white
+
+.suscribe_container
+	background amarillo
+	
+.logo
+	width 200px
+	margin 0 auto
+	
+	
+	
+
+/* ==============
+    MOBILE: Menu
+   ============== */
+
+nav
+	border-top 1px solid blanco
+	ul
+		margin 0
+		padding 0
+		list-style-type none
+		
+nav
+	a
+		display block
+		
+		text-align center
+		text-decoration none
+		font-weight bold
+		padding 0px 40px
+		
+		color blanco
+		
+nav a:hover,
+nav a:visited
+	color blanco
+
+nav
+	a
+		&:hover
+			text-decoration underline
+			
+.social
+	display inline-block
+	width 100%
+	text-align center
+	border-top 1px solid blanco
+	padding-top 10px
+	a
+		text-decoration none
+		span.icon
+			margin 10px 20px
+			font-size 1.5em
+			color blanco
+
+/* ==============
+    MOBILE: Main
+   ============== */
+
+header.header
+	padding-top 20px
+
+.banner_web
+	display none
+	
+.banner_mobile
+	display block
+	
+.main-container
+	text-align center
+	
+section.actividades
+	padding 40px 0px
+	
+article.actividad
+	margin 50px 0px
+	img
+		border-radius 50%
+	
+.btn
+	margin 0 auto
+	padding 20px
+	border-radius 5px
+	display inline
+	background magenta
+
+.btn a
+	width 50%
+	text-align center
+	text-decoration none
+	
+	font-size 2em
+	font-weight bold
+
+	color blanco
+	
+/* ==============
+    MOBILE: Blog
+   ============== */
+   
+section.blog
+	padding-bottom 40px
+	h1, h2
+		color blanco
+	p 
+		color gris_light
+	
+.blog__item
+	img
+		border 8px solid white
+		margin 4px
+		
+		-webkit-box-sizing border-box
+		-moz-box-sizing border-box
+		box-sizing border-box 
+		
+	
+
+/* =====================
+    MOBILE: suscribe
+   ===================== */
+
+section.suscribe
+	padding-bottom 40px
+	color negro
+	
+.contact__information
+	h2
+		font-weight bold
+		font-size 1.5em
+		width 50%
+		margin 0 auto
+	p
+		padding 20px 0px
+	
+.contact__formulario
+	label
+		display none
+		
+	input
+		border-radius 5px
+		display block
+		width 100%
+		text-decoration none
+		margin 10px 0px
+		padding 0.6em 
+		-webkit-box-sizing border-box
+		-moz-box-sizing border-box
+		box-sizing border-box 
+	
+	input[type="text"]
+		background blanco
+		color negro
+		border 0
+		
+	input[type="submit"]
+		color blanco
+		background magenta
+		font-weight bold
+		font-size 1.1em
+		
+.footer-container footer
+	padding 15px 0
+	text-align center
+	background negro
+	color white
+	
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 .title
+	padding-top 20px
+
+
+/* ==========================================================================
+   Custom styles
+   ========================================================================== */
+
+h1
+	font-weight bold
+	font-size 2.5em
+
+h2
+	font-weight bold
+	font-size 2em
+
+h3
+	width 80%
+	margin 0 auto
+	font-weight bold	
+
+/* ===========
+   Arrow Down
+   =========== */
+
+section.suscribe,
+section.blog
+	.arrow-down
+		width 0
+		height 0
+		border-left 40px solid transparent
+		border-right 40px solid transparent
+		margin 0 auto
+		
+section.blog
+	.arrow-down
+		border-top: 40px solid blanco
+		
+section.suscribe
+	.arrow-down
+		border-top: 40px solid negro
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* ====================
+    TABLET: Menu
+   ==================== */
+
++above(b1)
+	.wrapper
+		center(80%)
+	header
+		center(80%)
+		
+	nav
+		li
+			col(1/3, offset:1/9)
+			a
+				padding 10px
+
+	.banner_mobile
+		display none
+	.banner_web
+		display block
+		
+	article.actividad
+		img
+			width 50%
+			
+/* ========================
+    TABLET: IE Fixes
+   ======================== */
+	nav
+	   	ul
+	   		li
+	      		display inline
+	.oldie
+		nav
+			a
+				margin 0 0.7%
+	
+/* ============
+    WIDE: menu
+   ============ */
+
++above(b2)
+	.wrapper
+		center(90%)
+		
+	header
+		center(97%)
+
+	.logo
+		col(1/4)
+		img
+			width 160px
+			margin-top 10px
+	
+	nav
+		border-top none
+		margin-top 15px
+		col(1/2)
+		a
+			display block
+			margin 0 auto
+			
+	.social
+		col(1/4)
+		border-top none
+		display inline
+		text-align right
+		margin-top 15px
+		a
+			span.icon
+				font-size 1.8em
+				margin 0px 5px
+				color blanco
+
+
+	.articles
+		background blue
+	
+	article.actividad
+		img
+			width 80%
+		col(1/3)
+	
+	.btn
+		display inline-block
+		margin 0 auto
+	
+	.blog__item-container
+		.blog__item
+			col(1/2, cycle:2)
+			
+		
+	.form
+		center(80%)
+		.form__group
+			col(1/2, cycle:2)
+		
+		.form__submit
+			center(50%)
+
+/* ===============
+    Maximal Width
+   =============== */
++above(b3)
+	.wrapper
+		center(90%)
+	
+	.blog__item-container
+		.blog__item
+			col(1/3, cycle:3, uncycle:2)
+
+
++above(b4)
+	.wrapper
+		center(1026px)
+		
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.hidden
+  display none !important
+  visibility hidden
+
+.visuallyhidden
+  border 0
+  clip rect(0 0 0 0)
+  height 1px
+  margin -1px
+  overflow hidden
+  padding 0
+  position absolute
+  width 1px
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus
+  clip auto
+  height auto
+  margin 0
+  overflow visible
+  position static
+  width auto
+
+.invisible
+  visibility hidden
+
+.clearfix:before,
+.clearfix:after
+  content " "
+  display table
+
+.clearfix
+	*zoom 1
+		&:after
+			clear both
