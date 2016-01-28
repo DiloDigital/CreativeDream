@@ -1,5 +1,8 @@
+//   Helper classes
+
 .hidden
-  display none
+  display none !important
+  visibility hidden
 
 .visuallyhidden
   border 0
@@ -22,6 +25,18 @@
 
 .invisible
   visibility hidden
+
+.clearfix:before,
+.clearfix:after
+  content " "
+  display table
+
+.clearfix
+  *zoom 1
+    &:after
+      clear both
+
+// responsive
 
 .max-width
     width 100%
@@ -79,7 +94,4 @@
     &--gris-dark
         background-color gris_dark
 
-
-
-// font-siz
 

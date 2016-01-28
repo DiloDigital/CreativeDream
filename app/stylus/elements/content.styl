@@ -89,30 +89,11 @@ header.header
 .main-container
 	text-align center
 	
-section.actividades
-	padding 40px 0px
-	
 article.actividad
-	margin 50px 0px
+	margin 20px 0px
 	img
 		border-radius 50%
 	
-.btn
-	margin 0 auto
-	padding 20px
-	border-radius 5px
-	display block
-	width 50%
-	background magenta
-
-.btn a
-	text-align center
-	text-decoration none
-	
-	font-size 2em
-	font-weight bold
-
-	color blanco
 	
 /* ==============
     MOBILE: Blog
@@ -139,50 +120,19 @@ section.blog
    ===================== */
 
 section.suscribe
-	padding-bottom 40px
+	padding-bottom 20px
 	color negro
 	
-.contact__information
-	h2
-		font-weight bold
-		font-size 1.5em
-		width 50%
-		margin 0 auto
-	p
-		padding 20px 0px
-	
-.contact__formulario
-	label
-		display none
-		
-	input
-		border-radius 5px
-		display block
-		width 100%
-		text-decoration none
-		margin 10px 0px
-		padding 0.6em 
-		-webkit-box-sizing border-box
-		-moz-box-sizing border-box
-		box-sizing border-box 
-		border 0
-	
-	input[type="text"]
-		background blanco
-		color negro
-		
-	input[type="submit"]
-		color blanco
-		background magenta
-		font-weight bold
-		font-size 1.1em
-		
 .footer-container footer
-	padding 15px 0
 	text-align center
-	background negro
-	color white
-	
+	padding 5px
+	a
+		color white
+		font-size 0.8em
+		text-decoration none
+		&:hover
+			text-decoration underline
+		
 /* ===============
     ALL: IE Fixes
    =============== */
@@ -194,18 +144,6 @@ section.suscribe
    Custom styles
    ========================================================================== */
 
-h1
-	font-weight bold
-	font-size 2.5em
-
-h2
-	font-weight bold
-	font-size 2em
-
-h3
-	width 80%
-	margin 0 auto
-	font-weight bold	
 
 /* ===========
    Arrow Down
@@ -322,6 +260,7 @@ section.suscribe
 		display block
 		width 200px
 		margin 0 auto
+		margin-bottom 40px
 		
 	
 	.blog__item-container
@@ -352,42 +291,5 @@ section.suscribe
 	.wrapper
 		center(1026px)
 		
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
 
-.hidden
-  display none !important
-  visibility hidden
 
-.visuallyhidden
-  border 0
-  clip rect(0 0 0 0)
-  height 1px
-  margin -1px
-  overflow hidden
-  padding 0
-  position absolute
-  width 1px
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus
-  clip auto
-  height auto
-  margin 0
-  overflow visible
-  position static
-  width auto
-
-.invisible
-  visibility hidden
-
-.clearfix:before,
-.clearfix:after
-  content " "
-  display table
-
-.clearfix
-	*zoom 1
-		&:after
-			clear both
